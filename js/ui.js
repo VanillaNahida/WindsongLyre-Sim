@@ -67,22 +67,6 @@ function selectMode(node){
 }
 
 let volumeSlider = document.getElementById('volume');
-
-// 更新音量条填充颜色的函数
-function updateVolumeSlider() {
-    const value = volumeSlider.value;
-    volumeSlider.style.background = `linear-gradient(to right, var(--note-color) 0%, var(--note-color) ${value}%, #666 ${value}%)`;
-}
-
-volumeSlider.addEventListener('input',e=>{
-    // 设置音量
+volumeSlider.addEventListener('change',e=>{
     masterVolume.gain.value = Math.pow(volumeSlider.value /100,2);
-    // 更新音量条填充颜色
-    updateVolumeSlider();
-});
-
-// 初始化音量条填充颜色
-updateVolumeSlider();
-
-// 确保页面加载完成后初始化
-window.addEventListener('load', updateVolumeSlider);
+})
