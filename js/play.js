@@ -102,7 +102,7 @@ function loadAudio(id = "windsong_lyre") {
     let loaded = 0;
     onLoad(id);
     for (let key in keyMap) {
-        let url = `instruments/${id}/audio/${keyMap[key]}.mp3`;
+        let url = `./instruments/${id}/audio/${keyMap[key]}.mp3`;
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);
         xhr.responseType = 'arraybuffer';
@@ -304,7 +304,7 @@ function onLoadComplete(instId) {
     loadDiv.hidden = true;
     asyncLoad = document.querySelector('#async');
     if (asyncLoad.getAttribute("loaded") == "0") {
-        asyncLoad.href = 'css/async.css';
+        asyncLoad.href = './css/async.css';
         asyncLoad.setAttribute("loaded", "1");
     }
 }
