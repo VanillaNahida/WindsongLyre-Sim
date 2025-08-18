@@ -6,7 +6,8 @@
     --box-shadow-color1: rgb(212, 212, 196);
     --box-shadow-color2: rgb(223, 223, 198);
     --note-color: rgb(88, 153, 144);
-    
+    --background-text1: rgb(150, 148, 120);
+    --dialog-background-color: rgba(0, 0, 0, 0.7);
 }
 
 .key {
@@ -238,11 +239,13 @@
 .volume-control {
     position: absolute;
     top: 2vw;
-    left: 14vw;
+    left: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
+    transform: translateX(-50%);
+    width: max-content;
 }
 
 .volume-label {
@@ -263,11 +266,10 @@
     background: #666;
     outline: none;
     opacity: 0.7;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, background 0.2s;
+    border-radius: 0.15vw;
     /* 添加内部填充颜色 */
     background: linear-gradient(to right, var(--note-color) 0%, var(--note-color) 100%, #666 100%);
-    background-size: 100% 100%;
-    background-position: 0 0;
 }
 
 .volume-slider:hover {
