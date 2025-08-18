@@ -16,6 +16,15 @@
 
 <body onload='choice()'>
     <div id="loadDiv" class="loadDiv">正在加载...</div>
+    <!-- 横屏提醒弹窗 -->
+    <div id="orientationWarning" class="orientation-warning">
+        <div class="orientation-warning-content">
+            <div class="rotate-icon">
+                <img src="res/mobile_rotate.svg" alt="旋转屏幕" />
+            </div>
+            <p>请将手机横屏使用以获得最佳体验</p>
+        </div>
+    </div>
     <div class="toolbar">
         <div class="music" onclick="showTextarea('transpose')"><span class="musicClef music-color">&#8645;</span></div>
         <div class="music" onclick="showTextarea('input')"><span class="musicClef music-color">&#9655;</span></div>

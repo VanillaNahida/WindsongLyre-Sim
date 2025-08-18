@@ -70,3 +70,24 @@ let volumeSlider = document.getElementById('volume');
 volumeSlider.addEventListener('change',e=>{
     masterVolume.gain.value = Math.pow(volumeSlider.value /100,2);
 })
+
+// 设备方向检测与横屏提醒
+function checkOrientation() {
+    const orientationWarning = document.getElementById('orientationWarning');
+    const isMobileOrTablet = isMobile || (window.innerWidth < 1024); // 检测是否为手机或平板
+    const isPortrait = window.innerHeight > window.innerWidth; // 检测是否为竖屏
+    
+    // 在手机或平板且为竖屏时显示横屏提醒
+    if (isMobileOrTablet && isPortrait) {
+        orientationWarning.style.display = 'flex';
+    } else {
+        orientationWarning.style.display = 'none';
+    }
+}
+
+// 页面加载完成后检测一次
+window.addEventListener('load', checkOrientation);
+
+// 窗口大小变化或设备方向变化时重新检测
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);

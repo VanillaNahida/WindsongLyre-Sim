@@ -234,21 +234,81 @@
     z-index: 999;
 }
 
+/* 横屏提醒弹窗样式 */
+.orientation-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.orientation-warning-content {
+    text-align: center;
+    color: white;
+    font-family: 'genshin impact', Fallback, sans-serif;
+    font-size: 5vw;
+    padding: 2vw;
+}
+
+.orientation-warning-content p {
+    margin: 0;
+    margin-top: 3vw;
+}
+
+/* 旋转图标样式 */
+.rotate-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate-icon img {
+    width: 15vw;
+    height: 15vw;
+    animation: rotateAnimation 2s ease-in-out infinite;
+}
+
+/* 旋转动画 */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(230deg);
+    }
+    50% {
+        transform: rotate(140deg);
+    }
+    100% {
+        transform: rotate(230deg);
+    }
+}
 /* 音量控制样式 */
 
 .volume-control {
-    position: absolute;
-    top: 2vw;
+    position: fixed;
+    top: 2vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    z-index: 10;
+    gap: 0.8vw;
+    z-index: 9999;
+    padding: 1vw;
+}
+
+/* 确保不被工具栏遮挡 */
+.toolbar {
+    z-index: 100 !important;
 }
 
 .volume-label {
-    font-size: 1.4vw;
-    color: var(--background-text1);
+    font-size: 1.8vw;
+    color: rgb(150, 148, 120);
     font-family: 'genshin impact', Fallback, sans-serif;
     margin-right: 0.5vw;
 }
@@ -256,12 +316,13 @@
 .volume-slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 12vw;
-    height: 0.2vw;
-    background: #666;
+    width: 20vw;
+    height: 0.4vw;
+    background: rgba(144,249,227,0.3);
+    border-radius: 0.5vw;
     outline: none;
-    opacity: 0.7;
-    transition: opacity 0.2s;
+    opacity: 0.9;
+    transition: all 0.3s ease;
 }
 
 .volume-slider:hover {
@@ -271,11 +332,12 @@
 .volume-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 1.2vw;
-    height: 1.2vw;
-    background: var(--note-color);
+    width: 1.6vw;
+    height: 1.6vw;
+    background: rgb(144,249,227);
     cursor: pointer;
     border-radius: 50%;
+    box-shadow: 0 0 0.5vw rgba(144,249,227,0.5);
 }
 
 .volume-slider::-moz-range-thumb {
