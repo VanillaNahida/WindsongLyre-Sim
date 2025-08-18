@@ -234,9 +234,62 @@
     z-index: 999;
 }
 
-#volume {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 8px;
+/* 音量控制样式 */
+
+.volume-control {
+    position: absolute;
+    top: 2vw;
+    left: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.volume-label {
+    font-size: 1.4vw;
+    color: var(--background-text1);
+    font-family: 'genshin impact', Fallback, sans-serif;
+    margin-right: 0.5vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12vw;
+    height: 0.3vw;
+    background: #666;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    /* 添加内部填充颜色 */
+    background: linear-gradient(to right, var(--note-color) 0%, var(--note-color) 100%, #666 100%);
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.volume-slider:hover {
+    opacity: 1;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.2vw;
+    height: 1.2vw;
+    background: var(--note-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 1.2vw;
+    height: 1.2vw;
+    background: var(--note-color);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
 }

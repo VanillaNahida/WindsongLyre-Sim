@@ -26,5 +26,12 @@ let insts = {
         "color": "rgb(127, 179, 99)",
         "bg1": "rgb(160, 216, 128)",
         "bg2": "rgba(160, 216, 128, 0.8)"
+    },
+    "leaping_spirit_piano": {
+        "id": "leaping_spirit_piano",
+        "name": "跃律琴",
+        "color": "rgb(83, 175, 193)",
+        "bg1": "rgb(83, 170, 182)",
+        "bg2": "rgba(102, 182, 188, 0.8)"
     }
 };

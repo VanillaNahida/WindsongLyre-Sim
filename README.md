@@ -1,4 +1,4 @@
-### 说明
+# 说明
 本仓库fork自[https://github.com/haveyouwantto/WindsongLyre-Sim](https://github.com/haveyouwantto/WindsongLyre-Sim)，并进行了一些修改。对原项目不存在的乐器进行了补充，确保和游戏版本内的乐器一致
 
 已更新到原神5.8版本的`跃律琴`乐器

@@ -348,6 +348,16 @@
     display: inline;
 }
 
+/* GitHub图标位置调整 */
+.github-icon {
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+}
+
 .combo-box {    
     padding: 5px 12px 5px 12px;
     border-radius: 999px;

@@ -67,6 +67,13 @@ function selectMode(node){
 }
 
 let volumeSlider = document.getElementById('volume');
-volumeSlider.addEventListener('change',e=>{
+volumeSlider.addEventListener('input',e=>{
+    // 设置音量
     masterVolume.gain.value = Math.pow(volumeSlider.value /100,2);
-})
+    // 更新音量条填充颜色
+    const value = volumeSlider.value;
+    volumeSlider.style.background = `linear-gradient(to right, var(--note-color) 0%, var(--note-color) ${value}%, #666 ${value}%)`;
+});
+
+// 初始化音量条填充颜色
+volumeSlider.style.background = `linear-gradient(to right, var(--note-color) 0%, var(--note-color) 100%, #666 100%)`;
