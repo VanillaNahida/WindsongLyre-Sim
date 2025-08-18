@@ -289,7 +289,8 @@
 /* 音量控制样式 */
 
 .volume-control {
-    position: fixed;
+    position: relative;
+    z-index: 99;
     top: 2vh;
     left: 50%;
     transform: translateX(-50%);
