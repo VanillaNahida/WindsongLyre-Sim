@@ -19,6 +19,28 @@
     0 0 0.1vw 0.7vw var(--box-shadow-color2);
 }
 
+.orientation-warning-content p {
+    margin: 0;
+    margin-top: 3vw;
+}
+
+.close-orientation-warning {
+    position: absolute;
+    top: 125vw;
+    right: 23vw;
+    background: transparent;
+    border: none;
+    color: green;
+    font-size: 6.5vw;
+    font-family: 'genshin impact', Fallback, sans-serif;
+    cursor: pointer;
+    width: 55vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .text {
     font-size: 1.2vw;
     margin-top: 3.2vw;

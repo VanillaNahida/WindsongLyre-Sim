@@ -85,6 +85,18 @@ function checkOrientation() {
     }
 }
 
+// 添加关闭按钮事件监听
+window.addEventListener('load', function() {
+    const closeBtn = document.querySelector('.close-orientation-warning');
+    const orientationWarning = document.getElementById('orientationWarning');
+    
+    if (closeBtn && orientationWarning) {
+        closeBtn.addEventListener('click', function() {
+            orientationWarning.style.display = 'none';
+        });
+    }
+});
+
 // 页面加载完成后检测一次
 window.addEventListener('load', checkOrientation);
 
