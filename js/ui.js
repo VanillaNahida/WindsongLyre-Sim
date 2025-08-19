@@ -85,6 +85,22 @@ function checkOrientation() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.getElementById('instrumentDropdown');
+    const comboItems = dropdown.querySelector('.combo-items');
+    
+    dropdown.addEventListener('click', function(e) {
+        e.stopPropagation();
+        comboItems.style.display = comboItems.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target)) {
+            comboItems.style.display = 'none';
+        }
+    });
+});
+
 // 添加关闭按钮事件监听
 window.addEventListener('load', function() {
     const closeBtn = document.querySelector('.close-orientation-warning');
