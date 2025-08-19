@@ -26,8 +26,8 @@
 
 .close-orientation-warning {
     position: absolute;
-    top: 125vw;
-    right: 23vw;
+    top: 59%;
+    right: 20%;
     background: transparent;
     border: none;
     color: green;
@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .text {
