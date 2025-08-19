@@ -291,15 +291,15 @@
 .volume-control {
     position: relative;
     z-index: 99;
-    top: 2vh;
+    top: 8vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.8vw;
-    z-index: 9999;
-    padding: 1vw;
+    z-index: 9981;
+    padding: 0vw;
 }
 
 /* 确保不被工具栏遮挡 */
