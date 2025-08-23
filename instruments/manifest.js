@@ -27,6 +27,20 @@ let insts = {
         "bg1": "rgb(160, 216, 128)",
         "bg2": "rgba(160, 216, 128, 0.8)"
     },
+    "Ukulele": {
+        "id": "Ukulele",
+        "name": "悠可琴",
+        "color": "rgb(255, 204, 153)",
+        "bg1": "rgb(255, 238, 204)",
+        "bg2": "rgba(255, 238, 204, 0.8)"
+    },
+    "lingering_Euphonia": {
+        "id": "lingering_Euphonia",
+        "name": "余音",
+        "color": "rgb(146,136,211)",
+        "bg1": "rgb(149,145,223)",
+        "bg2": "rgb(149,145,223, 0.8)"
+    },
     "leaping_spirit_piano": {
         "id": "leaping_spirit_piano",
         "name": "跃律琴",
