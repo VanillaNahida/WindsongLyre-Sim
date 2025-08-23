@@ -36,7 +36,7 @@ let insts = {
     },
     "lingering_Euphonia": {
         "id": "lingering_Euphonia",
-        "name": "余音",
+        "name": "「余音」",
         "color": "rgb(146,136,211)",
         "bg1": "rgb(149,145,223)",
         "bg2": "rgb(149,145,223, 0.8)"
