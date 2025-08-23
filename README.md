@@ -60,8 +60,8 @@ Node.js官方网站：[https://nodejs.org](https://nodejs.org)
    
 ## 服务器部署说明
 ### 使用宝塔
-1.打包下载本项目
-2.上传到你的/www/wwwroot目录，解压
-3.点击宝塔面板网站功能，php项目，新建选择文件夹/www/wwwroot/WindsongLyre-Sim/
-4.分配好域名即可运行
+1. 打包下载本项目
+2. 上传到你的/www/wwwroot目录，解压
+3. 点击宝塔面板网站功能，php项目，新建选择文件夹/www/wwwroot/WindsongLyre-Sim/
+4. 分配好域名即可运行
 
