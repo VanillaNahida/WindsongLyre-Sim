@@ -1,11 +1,13 @@
 # 说明
-本仓库fork自[https://github.com/haveyouwantto/WindsongLyre-Sim](https://github.com/haveyouwantto/WindsongLyre-Sim)，并进行了一些修改。对原项目不存在的乐器进行了补充，确保和游戏版本内的乐器一致
+本仓库fork自[https://github.com/haveyouwantto/WindsongLyre-Sim](https://github.com/haveyouwantto/WindsongLyre-Sim)，并进行了一些修改。对原项目不存在的乐器进行了补充，确保和游戏版本内的乐器一致  
+以后将会保持和游戏本体内乐器同步更新~
 
 # 乐器更新及说明
-已更新到原神5.8版本的`跃律琴`乐器，除了鼓和圆号
+已更新到原神6.4版本的 `谐律键琴` 乐器，除了鼓和圆号
 1. 豪鼓，聚聚鼓：是14个音两排需要重新写布局。（理论上可以做）
 2. 晚风圆号：吹长音的功能原作者也没有制作，隔壁[Genshin Music Nightly](https://github.com/Specy/genshin-music)项目组也没做出来。
 3. 跃律琴：游戏中最长可演奏bpm60四拍，完整做不出来理由同上↑
+4. 谐律键琴：游戏中最长可演奏bpm60四拍，完整做不出来理由同上↑
 
 # 原神风物之诗琴模拟器
 
