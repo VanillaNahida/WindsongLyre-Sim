@@ -47,5 +47,12 @@ let insts = {
         "color": "rgb(83, 175, 193)",
         "bg1": "rgb(83, 170, 182)",
         "bg2": "rgba(102, 182, 188, 0.8)"
+    },
+    "Harmonic_Keys": {
+        "id": "Harmonic_Keys",
+        "name": "谐律键琴",
+        "color": "rgb(221, 176, 85)",
+        "bg1": "rgb(241, 196, 105)",
+        "bg2": "rgba(241, 196, 105, 0.8)"
     }
 };
